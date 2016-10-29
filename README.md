@@ -1,1 +1,1 @@
-# mk-js
+# microkanren-js

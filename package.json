@@ -1,0 +1,33 @@
+{
+  "name": "microkanren-js",
+  "version": "0.1.0",
+  "description": "",
+  "main": "src/mk.js",
+  "scripts": {
+    "build": "babel src --out-dir lib --ignore __tests__",
+    "typecheck": "flow",
+    "test": "jest",
+    "prepublish": "npm run typecheck && npm test && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keyanzhang/microkanren-js.git"
+  },
+  "keywords": [],
+  "author": "Keyan Zhang <root@keyanzhang.com> (http://keya.nz)",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/keyanzhang/microkanren-js/issues"
+  },
+  "homepage": "https://github.com/keyanzhang/microkanren-js#readme",
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-core": "^6.17.0",
+    "babel-plugin-transform-flow-strip-types": "^6.14.0",
+    "flow-bin": "^0.33.0",
+    "jest": "^16.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
